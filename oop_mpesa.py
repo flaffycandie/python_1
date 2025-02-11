@@ -17,7 +17,7 @@ class Account:
             self.balance -= amount
             print(f"Withdraw {amount} New Balance {self.balance}")
         else:
-            print("insufficient funds iza bro")
+            print("insufficient funds please")
     def check_balance(self):
         return self.balance
     def holder_name (self):
@@ -51,7 +51,7 @@ class Mpesa_payment (Payment_system):
         print(f"Processing Mpesa payment of {amount}.")
 # Example usage
 mpesa=Mpesa_payment()
-account1=Customers(1,'Alvin Kariuki',3500,+254707427850)
+account1=Customers(1,'Brian Murega',350000,+254745292727)
 deposit=DepositTransaction(500)
 withdraw=WithdrawTransaction(1200)
 deposit.execute(account1)
